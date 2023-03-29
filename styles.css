@@ -1,26 +1,70 @@
 body {
     font-family: kanit;
-    background-color: #EEEEEE;
+    background-color: #011126;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 60%;
+  }
+
+#login-header {
+    text-align: center;
+    color: #011C40;
+    padding: 0 0 15px 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #011C40;
 }
 
 input[type="text"] {
-    background-color: #ffffff;
+    background-color: #fff;
     color: black;
     border: 1px;
     padding: 10px 20px;
     font-size: 16px;
+    outline-color: #EEEEEE;
+    outline-style: solid;
+    margin: 0 auto;
 }
 
 input[type="password"] {
-    background-color: #ffffff;
+    background-color: #fff;
     color: black;
     border: 1px;
     padding: 10px 20px;
     font-size: 16px;
+    outline-color: #EEEEEE;
+    outline-style: solid;
+    margin: 0 auto;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label[for="remember"] {
+    font-size: 16px;
+}
+
+p {
+    text-align: center;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #08678C;
+    font-weight: bold;
 }
 
 input[type="submit"] {
-    background-color: #007bff;
+    background-color: #08678C;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -30,5 +74,28 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0069d9;
+    background-color: #074973;
+}
+
+html, body {
+    height: 100%;
+}
+
+.form-label {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.login-form {
+    margin: auto;
+    text-align: center;
 }
