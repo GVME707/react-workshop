@@ -125,7 +125,6 @@ input[type="submit"]:hover {
 .checkbox {
   display: flex;
   flex-direction: row;
-  margin-bottom: 1em;
 }
 
 #block_container {
@@ -140,5 +139,4 @@ input[type="submit"]:hover {
 
 .left-label {
   text-align: left;
-  margin-bottom: 1em;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="icon.png">
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
     </style>
@@ -14,9 +15,9 @@
 
 <body>
     <div id="login-container">
-        <h1 id="login-header">React workshop: Register Page</h1>
+        <h1 id="login-header">Register Page</h1>
         <p id="login-desc">Create your account and join our community by signing up here.</p>
-        <form action="" class="login-form">
+        <form action="" class="login-form" method="post">
             <div class="form-group">
                 <label for="firstname" class="form-label">First name:</label>
                 <input type="text" id="fname" name="fname" value="" class="form-input" />
@@ -29,22 +30,22 @@
                 <label for="gender" class="form-label">Gender</label>
                 <div id="block_container">
                     <div id="bloc1">
-                        <input type="radio" name="radGender" value="M" checked />
-                        <label for="male">Male</label>
+                        <input type="radio" name="radGender" id="radM" value="M" checked />
+                        <label for="radM">Male</label>
                     </div>
                     <div id="bloc2">
-                        <input type="radio" name="radGender" value="F" />
-                        <label for="female">Female</label>
+                        <input type="radio" name="radGender" id="radFM" value="F" />
+                        <label for="radFM">Female</label>
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <label for="occupation" class="form-label">Occupation</label>
                 <select name="dropdown-occupation" class="form-input">
-                    <option value="a">Actor</option>
-                    <option value="a">Administrator</option>
-                    <option value="a">Athlete</option>
-                    <option value="a">Artist</option>
+                    <option value="actor">Actor</option>
+                    <option value="admin">Administrator</option>
+                    <option value="athlete">Athlete</option>
+                    <option value="art">Artist</option>
                 </select>
             </div>
             <div class="form-group">
@@ -53,10 +54,12 @@
                 </div>
                 <div class="checkbox">
                   <div class="checkbox-container">
-                    <label for="car"><input type="checkbox" name="cbCar" value="car" />Car</label>
+                    <input type="checkbox" name="cbCar" id="car" value="car" />
+                    <label for="car">Car</label>
                   </div>
                   <div class="checkbox-container">
-                    <label for="bike"><input type="checkbox" name="cbBike" value="bike" />Bike</label>
+                    <input type="checkbox" name="cbBike" id="bike" value="bike" />
+                    <label for="bike">Bike</label>
                   </div>
                 </div>
               </div>
@@ -69,8 +72,11 @@
                 <label for="password" class="form-label">Password:</label>
                 <input type="password" id="password" name="password" value="" class="form-input" />
             </div>
-            <div class="form-group">
-                <label for="policy" class="left-label"><input type="checkbox" />Accecpt Policy & Agreement</label>
+            <div class="checkbox-container">
+                <div class="checkbox">
+                    <input type="checkbox" id="policy"/>
+                    <label for="policy" class="left-label">Accecpt Policy & Agreement</label>
+                </div>
             </div>
             <div class="form-group
         <div class=" form-group">
