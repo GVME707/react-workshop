@@ -77,18 +77,18 @@ input[type="submit"]:hover {
 }
 
 .form-input {
-    background-color: #fff;
-    color: black;
-    border: 1px solid #ccc;
-    padding: 10px 20px;
-    font-size: 16px;
-    outline-color: #eeeeee;
-    outline-style: solid;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
-    appearance: auto;
-    font-family: kanit;
+  background-color: #fff;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 16px;
+  outline-color: #eeeeee;
+  outline-style: solid;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  appearance: auto;
+  font-family: kanit;
 }
 
 .clear {
@@ -122,7 +122,7 @@ input[type="submit"]:hover {
   margin-right: 1em;
 }
 
-.checkbox {
+.checkbox2 {
   display: flex;
   flex-direction: row;
 }
@@ -139,4 +139,20 @@ input[type="submit"]:hover {
 
 .left-label {
   text-align: left;
+}
+
+.submit {
+  background-color: #08678c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.submit:hover {
+  background-color: #074973;
 }

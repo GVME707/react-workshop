@@ -1,90 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" href="icon.png">
+    <link rel="icon" href="icon.png" />
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
     </style>
     <title>Register</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="login-container">
-        <h1 id="login-header">Register Page</h1>
-        <p id="login-desc">Create your account and join our community by signing up here.</p>
-        <form action="" class="login-form" method="post">
-            <div class="form-group">
-                <label for="firstname" class="form-label">First name:</label>
-                <input type="text" id="fname" name="fname" value="" class="form-input" />
-            </div>
-            <div class="form-group">
-                <label for="lname" class="form-label">Last name:</label>
-                <input type="text" id="lanme" name="lname" value="" class="form-input" />
-            </div>
-            <div class="form-group">
-                <label for="gender" class="form-label">Gender</label>
-                <div id="block_container">
-                    <div id="bloc1">
-                        <input type="radio" name="radGender" id="radM" value="M" checked />
-                        <label for="radM">Male</label>
-                    </div>
-                    <div id="bloc2">
-                        <input type="radio" name="radGender" id="radFM" value="F" />
-                        <label for="radFM">Female</label>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="occupation" class="form-label">Occupation</label>
-                <select name="dropdown-occupation" class="form-input">
-                    <option value="actor">Actor</option>
-                    <option value="admin">Administrator</option>
-                    <option value="athlete">Athlete</option>
-                    <option value="art">Artist</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <div class="form-label">
-                  <label for="vehicle" class="form-label">Vehicle</label>
-                </div>
-                <div class="checkbox">
-                  <div class="checkbox-container">
-                    <input type="checkbox" name="cbCar" id="car" value="car" />
-                    <label for="car">Car</label>
-                  </div>
-                  <div class="checkbox-container">
-                    <input type="checkbox" name="cbBike" id="bike" value="bike" />
-                    <label for="bike">Bike</label>
-                  </div>
-                </div>
-              </div>
-              
-            <div class="form-group">
-                <label for="username" class="form-label">Username:</label>
-                <input type="text" id="username" name="username" value="" class="form-input" />
-            </div>
-            <div class="form-group">
-                <label for="password" class="form-label">Password:</label>
-                <input type="password" id="password" name="password" value="" class="form-input" />
-            </div>
-            <div class="checkbox-container">
-                <div class="checkbox">
-                    <input type="checkbox" id="policy"/>
-                    <label for="policy" class="left-label">Accecpt Policy & Agreement</label>
-                </div>
-            </div>
-            <div class="form-group
-        <div class=" form-group">
-                <input type="submit" value="Register" />
-            </div>
-        </form>
-        <p>You have an account ? <a href="login.html">Login</a></p>
-    </div>
-</body>
+      <h1 id="login-header">Register Page</h1>
+      <p id="login-desc">
+        Create your account and join our community by signing up here.
+      </p>
 
+      <div class="form-group">
+        <label for="firstname" class="form-label">First name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          value=""
+          class="form-input"
+        />
+      </div>
+      <div class="form-group">
+        <label for="lname" class="form-label">Last name:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          value=""
+          class="form-input"
+        />
+      </div>
+      <div class="form-group">
+        <label for="gender" class="form-label">Gender</label>
+        <div id="block_container">
+          <div id="bloc1">
+            <input
+              type="radio"
+              name="radGender"
+              id="radM"
+              value="Male"
+              checked
+            />
+            <label for="radM">Male</label>
+          </div>
+          <div id="bloc2">
+            <input type="radio" name="radGender" id="radFM" value="Female" />
+            <label for="radFM">Female</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="occupation" class="form-label">Occupation</label>
+        <select name="dropdown-occupation" class="form-input">
+          <option value="actor">Actor</option>
+          <option value="admin">Administrator</option>
+          <option value="athlete">Athlete</option>
+          <option value="art">Artist</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <div class="form-label">
+          <label for="vehicle" class="form-label">Vehicle</label>
+        </div>
+        <div class="checkbox2">
+          <div class="checkbox-container">
+            <input type="checkbox" name="cbCar" id="car" value="car" />
+            <label for="car">Car</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="cbBike" id="bike" value="bike" />
+            <label for="bike">Bike</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="username" class="form-label">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          value=""
+          class="form-input"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value=""
+          class="form-input"
+        />
+      </div>
+      <div class="checkbox-container">
+        <div class="checkbox">
+          <input type="checkbox" id="policy" />
+          <label for="policy" class="left-label">Accept Policy & Agreement</label>
+        </div>
+      </div>
+      <div class="form-group>
+      <div class="form-group">
+        <button id="register-btn" class="submit" onclick="onRegister()">
+          Register
+        </button>
+      </div>
+      <p>You have an account ? <a href="login.html">Login</a></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
+
+
